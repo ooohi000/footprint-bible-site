@@ -1,0 +1,40 @@
+:root {
+  --paper: #FBF8F2;
+  --card: #FFFFFF;
+  --ink: #1F1D1A;
+  --sub: #5E5850;
+  --line: #E8E0D2;
+  --teal: #1E5B60;
+  --rust: #B4532A;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Noto Sans KR', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  font-size: 19px;
+  line-height: 1.75;
+  word-break: keep-all;
+}
+main { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+.head { display: flex; align-items: center; gap: 16px; }
+.head img { width: 64px; height: 64px; border-radius: 15px; }
+.brand { font-size: 17px; font-weight: 500; color: var(--sub); margin: 0; }
+h1 { font-size: 32px; line-height: 1.35; margin: 2px 0 0; }
+h2 { font-size: 23px; margin: 44px 0 10px; padding-bottom: 6px; border-bottom: 2px solid var(--teal); color: var(--teal); }
+h3 { font-size: 19px; margin: 24px 0 4px; }
+p, li { margin: 8px 0; }
+ul, ol { padding-left: 24px; }
+.meta { color: var(--sub); font-size: 16px; }
+.box { background: var(--card); border: 2px solid var(--teal); border-radius: 14px; padding: 16px 20px; margin: 20px 0; }
+table { width: 100%; border-collapse: collapse; font-size: 17px; margin: 12px 0; background: var(--card); }
+th, td { border: 1px solid var(--line); padding: 10px; text-align: left; vertical-align: top; }
+th { background: #F3EEE4; width: 32%; font-weight: 600; }
+a { color: var(--teal); font-weight: 600; }
+footer { margin-top: 56px; color: var(--sub); font-size: 15px; border-top: 1px solid var(--line); padding-top: 16px; }
+@media (max-width: 480px) {
+  body { font-size: 18px; }
+  h1 { font-size: 27px; }
+  th { width: 38%; }
+}
